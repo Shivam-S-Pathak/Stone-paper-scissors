@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    background-color: rgb(76, 3, 99);
+    color: aliceblue;
+    height: 10vmin;
+    line-height: 10vmin;   /* to make the text at the center of the div */
+    font-size: 5vmin;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.choices{
+    padding: 7vmin;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10vmin;
+    user-select: none;
+
+}
+
+#stone , #paper , #scissors{
+    font-size: 20vmin;
+    border: 10px solid red;
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+#stone:hover{
+    transform: scale(0.9);
+}
+#paper:hover{
+    transform: scale(0.9);
+}
+#scissors:hover{
+    transform: scale(0.9);
+}
+
+.scoreboard{
+    padding: 10vmin;
+display: flex;
+justify-content: center;
+flex-direction: row;
+gap:10vmin;
+}
+
+.score{
+    font-size: 5vmin;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.message-container{
+    gap: 3vmin;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+}
+.message{
+    
+    border-radius: 1vmin;
+    padding: 1%;
+    font-size: 2.5vmin;
+    color: aliceblue;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.reset-btn{
+    background-color: blue;
+    border: none;
+    padding: 0.5vmin;
+    font-size:3vmin;
+    color: rgb(255, 251, 0);
+}
